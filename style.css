@@ -1,0 +1,76 @@
+body {
+    /* background-color: #000a18; */
+}
+
+.inline {
+    display: inline-block;
+    position: absolute;
+}
+
+.elename {
+    /* color: #ffffff; */
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.tab {
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    /* width: 500px; */
+    background-color: #ddd;
+    animation: tabUnhover 300ms;
+}
+.tab:hover{
+    animation: tabHover 300ms;
+    background-color: #bbb;
+}
+
+@keyframes tabHover {
+    from {
+        background-color: #ddd;
+    }
+    to {
+        background-color: #bbb;
+    }
+}
+@keyframes tabUnhover {
+    from {
+        background-color: #bbb;
+    }
+    to {
+        background-color: #ddd;
+    }
+}
+.block {
+    padding: 10px;
+    background-color: rgb(80, 220, 80);
+    height: 0;
+    width: 0;
+    border: black solid 1px;
+    border-radius: 0px;
+    margin: 0;
+}
+
+.elelist {
+    /* float: left; */
+    /* width: 50%; */
+    /* display: inline-block; */
+    /* min-width: 300px; */
+    font-family: 'Consolas';
+    font-size: 16px;
+    /* max-height: 120px;
+    overflow-y: auto; */
+    max-width: 710px;
+    overflow-x: auto;
+}
+
+/* .elelist2 {
+    float: left;
+    width: 50%; 
+    display: inline-block;
+    width: 50%;
+    font-family: 'Consolas';
+    font-size: 15px;
+} */
