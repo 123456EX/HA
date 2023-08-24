@@ -1,0 +1,59 @@
+.inline {
+    display: inline-block;
+    position: absolute;
+}
+
+.elename {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.tab {
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ddd;
+    animation: tabUnhover 300ms;
+}
+
+.tab:hover {
+    animation: tabHover 300ms;
+    background-color: #bbb;
+}
+
+@keyframes tabHover {
+    from {
+        background-color: #ddd;
+    }
+
+    to {
+        background-color: #bbb;
+    }
+}
+
+@keyframes tabUnhover {
+    from {
+        background-color: #bbb;
+    }
+
+    to {
+        background-color: #ddd;
+    }
+}
+
+.block {
+    padding: 10px;
+    height: 0;
+    width: 0;
+    border: black solid 1px;
+    border-radius: 0px;
+    margin: 0;
+}
+
+.elelist {
+    font-family: 'Consolas';
+    font-size: 16px;
+    max-width: 710px;
+    overflow-x: auto;
+}
